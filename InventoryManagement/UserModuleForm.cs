@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace InventoryManagement
 {
-    public partial class UserForm : Form
+    public partial class UserModuleForm : Form
     {
-        public UserForm()
+        public UserModuleForm()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
