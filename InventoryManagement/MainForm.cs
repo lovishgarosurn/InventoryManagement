@@ -17,6 +17,23 @@ namespace InventoryManagement
             InitializeComponent();
         }
 
+        //to show subform in mainform
+        private Form activeForm = null;
+        private void OpenChildForm(Form childForm)
+        {
+            if(activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -48,6 +65,17 @@ namespace InventoryManagement
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+            
+        {
+            OpenChildForm(new UserForm());
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
         {
 
         }
