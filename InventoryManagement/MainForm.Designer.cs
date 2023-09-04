@@ -178,7 +178,6 @@
             this.btnCategory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCategory.TabIndex = 13;
             this.btnCategory.TabStop = false;
-            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // btnCustomer
             // 
